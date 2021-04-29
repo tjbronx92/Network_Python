@@ -15,7 +15,8 @@ def modify_buff_size():
     print("Buffer size [Before]: ", bufsize)
     
     ''' socket option level = TCP
-    socket option = bypass Nagle Delays and send the data immediately''' 
+    socket option = bypass Nagle Delays and send the data immediately
+    sizeof(int)) = length of option value''' 
     sock.setsockopt(socket.SOL_TCP, socket.TCP_NODELAY, 1)
 
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, SEND_BUF_SIZE)
