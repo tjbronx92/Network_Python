@@ -15,3 +15,27 @@ def reuse_socket_addr():
 
     #Enable the SO_REUSEADDR option
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR,1)
+
+    new_state = sock.getsockopt(socket.SOL_SOCKET, SO_REUSEADDR)
+    print("New sock State: {}".format(new_state))
+
+    local_port = 8282
+
+    srv = socket.socket(socekt.AF_INET, socket.SOCK_STREAM)
+
+    srv.setsocopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+
+    srv.bind(('', local_port))
+    print("Listening on port: {}".format(local_port))
+
+    while True:
+        try:
+            connection, addr = srv.accept()
+            print("Connected by {}: {}").format(addr[0], addr[1])
+        except KeyboardIntterrupt:
+            break
+        except socket.error as msg:
+            print("{}".format(msg))
+
+if __name__ == '__main__':
+    reuse_socket_addr()
