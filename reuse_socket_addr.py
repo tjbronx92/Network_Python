@@ -30,6 +30,7 @@ def reuse_socket_addr():
 
     while True:
         try:
+            #accept() = syscall
             connection, addr = srv.accept()
             print("Connected by {}: {}").format(addr[0], addr[1])
         except KeyboardIntterrupt:
