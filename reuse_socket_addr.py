@@ -1,6 +1,6 @@
 #!/usr/bin/venv python3
 
-import SOCKET
+import socket
 import sys
 
 #getsockopt() and setsockopt() manipulate options for the socket referred to by the file descriptor sockfd.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level.
