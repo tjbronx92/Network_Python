@@ -1,6 +1,6 @@
 #!/usr/bin/venv python3
 
-import SOL_SOCKET
+import socket
 import sys
 
 #getsockopt() and setsockopt() manipulate options for the socket referred to by the file descriptor sockfd.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level.
@@ -30,6 +30,7 @@ def reuse_socket_addr():
 
     while True:
         try:
+            #accept() = syscall
             connection, addr = srv.accept()
             print("Connected by {}: {}").format(addr[0], addr[1])
         except KeyboardIntterrupt:
