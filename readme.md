@@ -1,10 +1,10 @@
 # Sockets
 
-**_socket_ - a socket is one endpoint of a two-way communication link between two programs running on the network.**
+**_socket_ - one endpoint of a two-way communication link between two programs running on the network.**
 
 ## Create socket: ##
 ```python
-socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 ```
 Creating a socket requires:
 1. define address family (default=AF_INET (IPv4))
@@ -20,7 +20,12 @@ Creating a socket requires:
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 ```
 
-Setting socket options requires:
+## Get Socket Options: ##
+```python
+sock.getsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR)
+```
+
+Socket options requires:
 1. socket option level
 2. socket option
 3. True (1) or False (0) --optional 
