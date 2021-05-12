@@ -1,6 +1,7 @@
 # Sockets
 
 **_socket_ - one endpoint of a two-way communication link between two programs running on the network.**
+[manual](https://docs.python.org/3/library/socket.html#module-socket)
 
 ## Create socket: ##
 ```python
