@@ -29,4 +29,4 @@ sock.getsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR)
 Socket options requires:
 1. socket option level
 2. socket option
-3. True (1) or False (0) --optional 
+3. True (1) or False (0) --_setsockopt()_ optional value 
