@@ -3,7 +3,7 @@
 **_socket_ - one endpoint of a two-way communication link between two programs running on the network.**
 [manual](https://docs.python.org/3/library/socket.html#module-socket)
 
-## Create socket: ##
+## Create Socket: ##
 ```python
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 ```
@@ -30,3 +30,15 @@ Socket options requires:
 1. socket option level
 2. socket option
 3. True (1) or False (0) --_setsockopt()_ optional value 
+
+***
+
+# Binding Sockets
+_When a socket is created with socket(2), it exists in a name space (address family) but has no address assigned to it.  bind() assigns the address specified by addr to the socket referred to by the file descriptor sockfd._
+
+## Bind Socket: ##
+```python
+sock.bind(("127.0.0.1", 0))
+```
+
+***
