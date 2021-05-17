@@ -30,7 +30,6 @@ Socket options requires:
 1. socket option level
 2. socket option
 3. True (1) or False (0) --_setsockopt()_ optional value 
-
 ***
 
 # Binding Sockets
@@ -41,8 +40,7 @@ Socket options requires:
 sock.bind(("127.0.0.1", 0))
 ```
 
-***
-
 Bind requires:
 1. IP address (str)
 2. port number (int)
+***
