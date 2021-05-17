@@ -33,7 +33,7 @@ Socket options requires:
 ***
 
 # Binding Sockets
-  When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns the address specified by addr to the socket referred to by the file descriptor sockfd.
+  When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns an address to the socket.
 
 ## Bind Socket: ##
 ```python
