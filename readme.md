@@ -14,7 +14,7 @@ Creating a socket requires:
 ***
 # Socket Options
 
-**getsockopt()** and **setsockopt()** manipulate options for the socket referred to by the file descriptor sockfd.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [manual](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)
+  **getsockopt()** and **setsockopt()** manipulate options for the socket referred to by the file descriptor sockfd.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [manual](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)
 
 ## Set Socket Options: ##
 ```python
@@ -34,7 +34,7 @@ Socket options requires:
 ***
 
 # Binding Sockets
-_When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns the address specified by addr to the socket referred to by the file descriptor sockfd._
+  When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns the address specified by addr to the socket referred to by the file descriptor sockfd.
 
 ## Bind Socket: ##
 ```python
@@ -42,3 +42,7 @@ sock.bind(("127.0.0.1", 0))
 ```
 
 ***
+
+Bind requires:
+1. IP address (str)
+2. port number (int)
