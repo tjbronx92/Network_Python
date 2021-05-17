@@ -41,6 +41,7 @@ sock.bind(("127.0.0.1", 0))
 ```
 
 Bind requires:
-1. IP address (str)
+1. IP address (str) --The format of address depends on the address family.
 2. port number (int)
+3. The socket must not already be bound
 ***
