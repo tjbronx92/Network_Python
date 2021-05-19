@@ -14,7 +14,7 @@ Creating a socket requires:
 ***
 # Socket Options
 
-**getsockopt()** and **setsockopt()** manipulate options for the socket referred to by the file descriptor sockfd.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [manual](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)
+**getsockopt()** and **setsockopt()** manipulate options for the socket.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [manual](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)
 
 ## Set Socket Options: ##
 ```python
