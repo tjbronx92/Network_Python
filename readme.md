@@ -47,5 +47,5 @@ Bind requires:
 ***
 
 <p align="center">
-  <img src="https://files.realpython.com/media/sockets-tcp-flow.1da426797e37.jpg" alt="client_server_model" width="600">
+  <img src="https://files.realpython.com/media/sockets-tcp-flow.1da426797e37.jpg" alt="client_server_model" width="650">
 </p>
