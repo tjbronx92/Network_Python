@@ -45,3 +45,4 @@ Bind requires:
 2. port number (int)
 3. The socket must not already be bound --close()
 ***
+![client_server_model](https://files.realpython.com/media/sockets-tcp-flow.1da426797e37.jpg)
