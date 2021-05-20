@@ -34,7 +34,7 @@ Socket options requires:
 ***
 
 # Binding Sockets
-When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns an address to the socket.
+When a socket is created with **socket()**, it exists in a name space (address family) but has no address assigned to it. **bind()** assigns an address to the socket. [bind(2)](https://man7.org/linux/man-pages/man2/bind.2.html)
 
 ## Bind Socket: ##
 ```python
