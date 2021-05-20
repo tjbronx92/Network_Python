@@ -1,7 +1,7 @@
 # Sockets
 
 **_socket_ - one endpoint of a two-way communication link between two programs running on the network.**
-[manual](https://docs.python.org/3/library/socket.html#module-socket)
+[socket()](https://docs.python.org/3/library/socket.html#module-socket)
 
 ## Create Socket: ##
 ```python
@@ -14,7 +14,8 @@ Creating a socket requires:
 ***
 # Socket Options
 
-**getsockopt()** and **setsockopt()** manipulate options for the socket.  Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [manual](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)
+**getsockopt()** and **setsockopt()** manipulate options for the socket.[getsockopt(2)](https://man7.org/linux/man-pages/man2/getsockopt.2.html#DESCRIPTION)  
+Options may exist at multiple protocol levels; they are always present at the uppermost socket level. [socket(7)](https://manpages.debian.org/buster/manpages/socket.7.en.html)
 
 ## Set Socket Options: ##
 ```python
